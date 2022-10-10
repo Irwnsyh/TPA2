@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator BMI</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    
+</head>
+<body>
+    <div class="bmi">
+        <h1>Kalkulator BMI</h1>
+        <p id="guide">Silakan masukkan Berat(kg) dan Tinggi(cm) Badan Anda</p>
+        <p class="text">Berat (kg)</p>
+        <input type="number" id="berat">
+
+        <p class="text">Tinggi (cm)</p>
+        <input type="number" id="tinggi">
+        <p id="result"></p>
+        <p id="status"></p>
+
+        <button id="button" onclick="hitung()">Hitung</button>
+        <button id="reset" onclick="reset()">Reset</button>
+    </div>
+
+    <div class="tbl" id="table">
+        <table>
+            <caption>BMI</caption>
+            <tr>
+              <th>Berat Badan Kurang</th>
+              <th>Sehat</th> 
+              <th>Kelebihan Berat Badan</th>
+              <th>Gemuk</th>
+            </tr>
+            <tr>
+              <td>Di bawah 18.5</td>
+              <td>18.5–24.9</td>
+              <td>25.0–29.9</td>
+              <td>30.0 ke atas</td>
+            </tr>
+          </table>
+    <script>
+        alert("Body Mass Index (BMI) adalah salah satu cara mengetahui berat badan ideal yang diukur berdasarkan berat dan tinggi badan Anda.");
+    </script>
+    <script src="index.js"></script>
+    </div>
+</body>
+</html>
